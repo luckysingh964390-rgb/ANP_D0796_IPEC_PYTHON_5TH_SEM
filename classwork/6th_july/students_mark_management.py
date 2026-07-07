@@ -1,0 +1,1 @@
+#create a dictionary to store the marks of 5 students, where the keys are the student names and the values are their corresponding marks.
