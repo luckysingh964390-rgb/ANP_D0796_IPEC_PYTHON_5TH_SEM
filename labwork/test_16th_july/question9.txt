@@ -1,0 +1,17 @@
+def word_frequency(s):
+    s = s.lower()
+    s = s.replace(".", "")
+    words = s.split()
+
+    d = {}
+
+    for i in words:
+        d[i] = d.get(i, 0) + 1
+
+    for i in sorted(d):
+        print(i, ":", d[i])
+
+    print("Most Repeated =", max(d, key=d.get))
+
+sentence = input("Enter Sentence: ")
+word_frequency(sentence)

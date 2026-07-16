@@ -1,0 +1,23 @@
+s = input("Enter String:")
+
+u = 1 = d = sp = 0
+for i in s:
+    if i.isupper():
+        u += 1
+    elif i.islower():
+        l += 1
+    elif i.isdigit():
+        d += 1
+    else:
+        sp += 1
+
+print("Upper:", u)
+print("Lower:", l)
+print("Digit:", d)
+print("Special:", sp)
+print("Most Frequent:", max(set(s), key=s.count))
+
+
+
+
+ 

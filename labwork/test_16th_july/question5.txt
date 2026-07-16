@@ -1,0 +1,12 @@
+list = []
+for i in range (20):
+  list.append(int(input()))
+
+print(max(list))
+print(sorted(set(list))[-2])
+print(min(list))
+print(list(set(list)))
+print([i for i in list if i % 2 == 0])
+print([i for i in list if i % 3 == 0 and i % 5 == 0])
+print(list[::-1])
+

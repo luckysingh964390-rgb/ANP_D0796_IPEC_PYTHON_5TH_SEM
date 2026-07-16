@@ -1,0 +1,12 @@
+def hra(b): return b * 0.20
+def da(b): return b * 0.10
+def tax(g): return g * 0.08
+
+b = float(input("Basic: "))
+g = b + hra(b) + da(b)
+n = g - tax(g)
+
+print("Gross =", g)
+print("Net =", n)
+
+

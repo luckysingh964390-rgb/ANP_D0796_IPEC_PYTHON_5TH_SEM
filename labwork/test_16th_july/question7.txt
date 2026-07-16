@@ -1,0 +1,36 @@
+dictionary = {}
+
+for i in range(10):
+    roll = input("Roll No: ")
+    marks = int(input("Marks: "))
+    dictionary[roll] = marks
+
+print("Topper =", max(dictionary, key=dictionary.get))
+
+avg = sum(dictionary.values()) / len(dictioanry)
+print("Average =", avg)
+
+print("Above Average:")
+for i in dictionary:
+    if dictionary[i] > avg:
+        print(i, dictionary[i])
+
+fail = 0
+for i in dictionary:
+    if dictionary[i] < 35:
+        fail += 1
+print("Failed =", fail)
+
+for i in dictionary:
+    m = dictionary[i]
+    if m >= 90:
+        g = "A"
+    elif m >= 75:
+        g = "B"
+    elif m >= 60:
+        g = "C"
+    elif m >= 35:
+        g = "D"
+    else:
+        g = "Fail"
+    print(i, g)

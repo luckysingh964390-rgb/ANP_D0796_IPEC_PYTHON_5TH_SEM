@@ -1,0 +1,22 @@
+t = ()
+
+for i in range(15):
+    name = input("Enter Name: ")
+    t = t + (name,)
+
+print("Total Students =", len(t))
+print("First Five =", t[:5])
+print("Last Five =", t[-5:])
+
+s = input("Search Name: ")
+
+if s in t:
+    print("Found")
+else:
+    print("Not Found")
+
+print("Occurrences =", t.count(s))
+
+l = list(t)
+l.sort()
+print("Sorted List =", l)

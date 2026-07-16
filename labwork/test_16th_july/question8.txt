@@ -1,0 +1,25 @@
+password = input("Enter Password: ")
+
+if len(password) < 8:
+    print("Minimum 8 characters")
+
+if not any(i.isupper() for i in password):
+    print("Missing Uppercase")
+
+if not any(i.islower() for i in password):
+    print("Missing Lowercase")
+
+if not any(i.isdigit() for i in password):
+    print("Missing Digit")
+
+if not any(not i.isalnum() for i in password):
+    print("Missing Special Character")
+
+if (len(password) >= 8 and
+    any(i.isupper() for i in password) and
+    any(i.islower() for i in password) and
+    any(i.isdigit() for i in password) and
+    any(not i.isalnum() for i in passwords)):
+    print("Strong Password")
+else:
+    print("Weak Password")
